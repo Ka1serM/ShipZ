@@ -1,0 +1,355 @@
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('themes/military/fonts/inconsolataBold.ttf');
+}
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('fonts/inconsolataBold.ttf');
+}
+
+
+.root {
+    /* Background */
+    -fx-background-image: url('images/bg.png');
+
+    /* Global Font */
+    -fx-background-color: #0e1013;
+    -fx-font-family: "Inconsolata";
+    -fx-font-size: 14px;
+}
+
+
+/* Text */
+Text {
+    -fx-fill: #C9C9C9;
+    -fx-line-spacing: 2px;
+    -fx-font-size: 85%;
+}
+
+Text.groesser {
+    -fx-font-size: 120%;
+}
+
+Text.sehrGross {
+    -fx-font-size: 150%;
+}
+
+
+Text.ueberschrift {
+    -fx-font-size: 160%;
+    -fx-fill: #E39608;
+}
+
+
+Text.spieltitel {
+    -fx-font-size: 600%;
+}
+
+
+/* ScrollPane */
+.scroll-pane {
+    -fx-background-insets: 0 0 0 0, 0;
+    -fx-padding: 0 0 0 0;
+    -fx-background-color: transparent;
+    -fx-border-color: #C9C9C9;
+    -fx-border-width: 1px;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+
+
+/* Scrollbar */
+.scroll-bar {
+    -fx-background-insets: 0 0 0 0, 0;
+    -fx-background-color: transparent;
+    -fx-border-color: #C9C9C9;
+    -fx-border-width: 0px 0px 0px 1px;
+}
+
+.scroll-bar > .thumb {
+    -fx-border-color: #C9C9C9;
+    -fx-border-width: 1 0 1 0;
+    -fx-background-color: #C9C9C933;
+    -fx-cursor: hand;
+    -fx-background-insets: 0 0 0 0;
+    -fx-border-radius: 0 0 0 0;
+}
+
+.scroll-bar > .thumb:pressed {
+    -fx-background-color: #C9C9C966;
+    -fx-cursor: hand;
+}
+
+.scroll-bar > .increment-button:hover,
+.scroll-bar > .decrement-button:hover {
+    -fx-background-color: transparent;
+}
+
+
+
+/* Tabellen */
+TableView {
+    -fx-background-color: transparent;
+    -fx-padding: 0 0 0 0;
+    -fx-border-color: #c9c9c9;
+    -fx-border-width: 1px;
+}
+
+.table-view .column-header,
+.table-view .filler {
+    -fx-background-color: #6B6B6B33;
+    -fx-border-color: #c9c9c9;
+    -fx-border-width: 0 0 1 0;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background .label {
+    -fx-background-color: transparent;
+    -fx-text-fill: #c9c9c9;
+    -fx-alignment: center-left;
+    -fx-padding: 10px 10px 10px 30px;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: c9c9c9;
+    -fx-border-width: 0;
+    -fx-padding: 10px 10px 10px 30px;
+}
+
+.table-row-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 0 0 0 0;
+}
+
+.table-row-cell:odd,
+.table-row-cell:even,
+.table-row-cell:selected {
+    -fx-background-color: transparent;
+}
+
+.table-view .scroll-bar:horizontal {
+    visibility: hidden;
+}
+
+
+/* Button */
+Button {
+    -fx-border-color: #C9C9C9;
+    -fx-border-width: 1px;
+    -fx-text-fill: #C9C9C9;
+    -fx-background-color: transparent;
+}
+
+Button:hover {
+    -fx-border-color: #f4f4f4;
+    -fx-text-fill: #f4f4f4;
+    -fx-background-color: #6B6B6B33;
+    -fx-cursor: hand;
+}
+
+Button:pressed {
+    -fx-background-color: #6B6B6B33;
+}
+
+Button:disabled {
+    /* Opacity wird standardmaessig gesenkt */
+}
+
+Button.grosserButton {
+    -fx-font-size: 120%;
+    -fx-padding: 10;
+}
+Button.kleinerButton {
+    -fx-font-size: 80%;
+}
+
+
+/* CheckBox */
+CheckBox {
+    -fx-text-fill: #C9C9C9; /* fuers Label */
+}
+
+CheckBox > .box {
+    -fx-border-color: #C9C9C9;
+    -fx-border-width: 1px;
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+CheckBox:selected > .box > .mark {
+    -fx-background-color: #C9C9C9;
+}
+
+
+/* ChoiceBox */
+ChoiceBox {
+    -fx-background-color: transparent;
+    -fx-border-color: #C9C9C9;
+    -fx-border-width: 1px;
+}
+
+ChoiceBox > .open-button > .arrow {
+    -fx-background-color: #C9C9C9;
+    -fx-border-width: 0px;
+}
+
+ChoiceBox .context-menu {
+    -fx-background-color: #0e1013cc;
+}
+
+ChoiceBox .label {
+    -fx-text-fill: #C9C9C9;
+}
+
+ChoiceBox .menu-item {
+}
+
+ChoiceBox .menu-item:focused {
+    -fx-background-color: #6B6B6B33;
+}
+
+
+
+/* ProgressBar */
+ProgressBar {
+    -fx-min-height: 10px;
+    -fx-pref-height: 10px;
+    -fx-max-height: 10px;
+    -fx-border-color: #C9C9C9;
+    -fx-border-width: 1px;
+}
+
+ProgressBar > .bar { /* Laufender Indikator */
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-background-color: transparent;
+    -fx-background-image: url("images/progressbarBg.png");
+    -fx-background-size: auto 100%;
+    -fx-border-width: 0px 1px 0px 0px;
+    -fx-border-color: #C9C9C9aa;
+}
+
+.progress-bar > .track { /* Hintergrund */
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-background-color: transparent;
+}
+
+
+/* Label */
+Label {
+    -fx-text-fill: #C9C9C9;
+}
+
+Label.index {
+    -fx-font-size: 80%;
+}
+
+
+Label.kleinererIndex {
+    -fx-font-size: 60%;
+}
+
+Label.kleiner {
+    -fx-font-size: 85%;
+}
+
+
+
+/* Textfelder */
+TextField {
+     -fx-border-color: #C9C9C9;
+     -fx-border-width: 1px;
+     -fx-text-fill: #C9C9C9;
+     -fx-background-color: #6B6B6B33;
+}
+
+
+/* Spinner */
+IntSpinner TextField:disabled {
+    -fx-opacity: 1.0;
+}
+
+SchiffSpinner TextField:disabled {
+    -fx-opacity: 1.0;
+}
+
+
+/* Felder */
+Feld {
+    -fx-border-color: #4B4B4B;
+    -fx-border-width: 0.5px;
+    -fx-background-color: #0e101388;
+}
+
+
+.spielfeldrahmen {
+    -fx-border-color: #C9C9C9;
+    -fx-border-width: 1.0px;
+    -fx-border-insets: -1 -1 -1 -1;
+}
+
+.spielfeldrahmen.aktiviert {
+    -fx-border-color: #E39608;
+    -fx-border-width: 2.0px;
+    -fx-border-insets: -2 -2 -2 -2;
+}
+
+
+
+/* Schussfelder */
+Schuss {
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+
+Schuss.aktiviert {
+    -fx-cursor: hand;
+}
+
+Schuss.aktiviert:hover {
+    -fx-border-width: 1.0px;
+    -fx-border-color: #E39608;
+}
+
+Schuss.aktiviert:pressed {
+    -fx-background-color: #E39608;
+    -fx-opacity: 0.9;
+}
+
+Schuss.keinTreffer {
+    -fx-background-image: url("images/schuesse/keinTreffer.png");
+    -fx-background-size: 40%;
+}
+
+Schuss.treffer {
+    -fx-background-image: url("images/schuesse/treffer.png");
+    -fx-background-size: 50%;
+}
+
+Schuss.trefferVersenkt {
+    -fx-background-image: url("images/schuesse/trefferVersenkt.png");
+    -fx-background-size: 50%;
+}
+
+
+
+/* Schiffe */
+Schiff.verziehbar:hover {
+    -fx-cursor: OPEN_HAND;
+}
+
+Schiff.verziehbar:pressed {
+    -fx-cursor: CLOSED_HAND;
+    -fx-opacity: 0.6;
+}
+
+Schiff:blink {
+    -fx-opacity: 0.5;
+}

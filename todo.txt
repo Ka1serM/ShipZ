@@ -1,0 +1,22 @@
+-automatisch platzieren mehrfach
+-alle schiffe platzieren
+    -auslastung berechnen
+        -bei schiffsberührung
+            (laenge * 3) + 2
+        -bei nicht schiffsberührung:
+            -(laenge + 2) * 3
+        -bei 20% auslastung schon warnen damit Algorithmus funktioniert
+
+-ki vs ki auf Netzwerk
+
+-Prüfung:
+    -SLURPH macht Doku in Fließtext
+    -ganttchart
+    -halbe Seite Einleitung
+    -halbe Seite Aufgabenverteilung
+    -Jeder macht Seite mit "welche Probleme gab es, wie habe ich was gelöst"
+    -Doku muss 2 Wochen vor Prüfung hochgeladen worden
+    -SLURPH macht Präsi (mit Vorlagen z.B. von Slidesgo)
+    -nicht soo viel Text (sowieso Stichpunkte), lieber Grafiken
+
+
